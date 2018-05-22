@@ -1,0 +1,13 @@
+<?php if($this->canShow()): ?>
+	<div id="piwik-notice" class="<?php echo $this->getCssClass() ?>">
+		<?php if(Mage::helper('core')->isModuleEnabled('Intersales_MageFontello')): ?>
+			<p><?php echo $this->getContent(); ?> <span id="piwik-notice-button"><i class="icon-cancel"></i></span></p>
+		<?php else: ?>
+			<p><?php echo $this->getContent(); ?> <span id="piwik-notice-button">x</span></p>
+		<?php endif; ?>
+	</div>
+
+	<script type="text/javascript">
+		var piwikNotice = new IntersalesPiwik.Notice('<?php echo $this->getAjaxHideUrl(); ?>', 'piwik-notice', 'piwik-notice-button');
+	</script>
+<?php endif; ?>

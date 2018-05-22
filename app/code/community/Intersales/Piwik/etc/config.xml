@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Intersales_Piwik>
+            <version>1.0.1</version>
+        </Intersales_Piwik>
+    </modules>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <intersales_piwik>
+                    <files>
+                        <default>Intersales_Piwik.csv</default>
+                    </files>
+                </intersales_piwik>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <frontend>
+        <layout>
+            <updates>
+                <intersales_piwik>
+                    <file>intersales_piwik.xml</file>
+                </intersales_piwik>
+            </updates>
+        </layout>
+        <routers>
+            <intersales_piwik>
+                <use>standard</use>
+                <args>
+                    <module>Intersales_Piwik</module>
+                    <frontName>piwik</frontName>
+                </args>
+            </intersales_piwik>
+        </routers>
+    </frontend>
+
+    <global>
+        <blocks>
+            <intersales_piwik>
+                <class>Intersales_Piwik_Block</class>
+            </intersales_piwik>
+        </blocks>
+        <helpers>
+            <intersales_piwik>
+                <class>Intersales_Piwik_Helper</class>
+            </intersales_piwik>
+        </helpers>
+        <models>
+            <intersales_piwik>
+                <class>Intersales_Piwik_Model</class>
+            </intersales_piwik>
+        </models>
+    </global>
+
+    <default>
+        <intersales_piwik>
+            <notice>
+                <link_target><![CDATA[_self]]></link_target>
+            </notice>
+        </intersales_piwik>
+    </default>
+</config>

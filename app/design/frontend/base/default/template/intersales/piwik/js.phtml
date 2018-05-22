@@ -1,0 +1,32 @@
+<?php if ($this->canShow()): ?>
+	<!-- Piwik -->
+	<script type="text/javascript">
+		var _paq = _paq || [];
+		<?php echo $this->getJsCodeForSuccessPage(); ?>
+		<?php echo $this->getJsCodeForProductView(); ?>
+		<?php if($this->getJsCodeForProductView() == ''): ?>
+			<?php echo $this->getJsCodeForCategoryView(); ?>
+		<?php endif; ?>
+		<?php echo $this->getJsCodeForSearchResult(); ?>
+		<?php echo $this->getJsCodeFor404Page(); ?>
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+
+		(function() {
+			var u = (('https:' == document.location.protocol) ? 'https' : 'http') + ':<?php echo $this->getRelativePiwikUrl() ?>';
+			_paq.push(['setTrackerUrl', u + 'piwik.php']);
+			_paq.push(['setSiteId', '<?php echo $this->getSiteId() ?>']);
+
+			var d = document,
+				g = d.createElement('script'),
+				s = d.getElementsByTagName('script')[0];
+
+			g.type = 'text/javascript';
+			g.defer = true;
+			g.async = true;
+			g.src = u + 'piwik.js';
+			s.parentNode.insertBefore(g,s);
+		})();
+	</script>
+	<!-- End Piwik Code -->
+<?php endif; ?>

@@ -1,0 +1,15 @@
+{
+    "name": "magento-modules/piwik",
+    "type": "magento-module",
+    "description": "Include the free and open source web analytics application piwik.",
+    "authors": [
+        {
+            "name": "Daniel Rose",
+            "email": "dr@intersales.de",
+            "homepage": "http://www.intersales.de",
+            "role": "developer"
+        }
+    ], "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

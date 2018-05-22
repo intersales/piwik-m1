@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addCss"><stylesheet>css/intersales/piwik/main.css</stylesheet></action>
+            <action method="addJs"><script>intersales/piwik.js</script></action>
+        </reference>
+        <reference name="before_body_end">
+            <block type="intersales_piwik/notice" name="piwik_notice" template="intersales/piwik/notice.phtml"/>
+            <block type="intersales_piwik/js" name="piwik_js" template="intersales/piwik/js.phtml"/>
+        </reference>
+    </default>
+</layout>

@@ -1,0 +1,9 @@
+app/code/community/Intersales/* app/code/community/Intersales/
+app/design/frontend/base/default/layout/* app/design/frontend/base/default/layout/
+app/design/frontend/base/default/template/intersales/* app/design/frontend/base/default/template/intersales/
+app/etc/modules/* app/etc/modules/
+app/locale/de_DE/* app/locale/de_DE/
+
+js/intersales/* js/intersales/
+
+skin/frontend/base/default/css/intersales/* skin/frontend/base/default/css/intersales/

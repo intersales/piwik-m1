@@ -1,0 +1,6 @@
+#piwik-notice { position: fixed; width: 100%; background: #f2f2f2; opacity: 0.8; z-index: 99999; left: 0px; }
+#piwik-notice:hover { opacity: 1.0; }
+#piwik-notice.top { top: 0px; border-bottom: 1px solid #e4e4e4;}
+#piwik-notice.bottom { bottom: 0px; border-top: 1px solid #e4e4e4; }
+#piwik-notice p { text-align: center; padding: 10px 0px; margin: 0px; }
+#piwik-notice p span#piwik-notice-button { font-weight: bold; cursor: pointer; }

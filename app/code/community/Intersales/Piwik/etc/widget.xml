@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<widgets>
+    <intersales_piwik_optout_iframe type="intersales_piwik/widget_optout" translate="name description" module="intersales_piwik">
+        <name>Piwik OptOut iFrame</name>
+        <description>Include Piwik OptOut iFrame </description>
+        <parameters>
+            <height translate="label">
+                <required>1</required>
+                <visible>1</visible>
+                <value>auto</value>
+                <label>Height</label>
+                <type>text</type>
+            </height>
+            <language>
+                <required>1</required>
+                <visible>1</visible>
+                <value>en</value>
+                <label>Language</label>
+                <type>text</type>
+            </language>
+            <use_custom_opt_out translate="label">
+                <visible>1</visible>
+                <label>Use Piwik-Module CustomOptOut</label>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+            </use_custom_opt_out>
+        </parameters>
+    </intersales_piwik_optout_iframe>
+</widgets>

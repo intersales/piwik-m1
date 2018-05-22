@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Intersales_Piwik>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Intersales_Piwik>
+    </modules>
+</config>

@@ -1,0 +1,3 @@
+<?php if($this->canShow()): ?>
+	<iframe src="<?php echo $this->getPiwikUrl() ?>index.php?module=<?php echo $this->getModuleParam(); ?>&action=optOut&idSite=<?php echo $this->getSiteId(); ?>&language=<?php echo $this->getLanguage(); ?>" width="100%" height="<?php echo $this->getHeight(); ?>" frameborder="no" ></iframe>
+<?php endif; ?>
